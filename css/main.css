@@ -1,0 +1,100 @@
+.hero {
+    background-color: #fefaf5;
+}
+
+.hero .container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 5rem 1rem;
+    margin: 0 auto;
+    display: grid;
+}
+
+.hero__textcontent-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.hero__header-primary {
+    font-size: 4rem;
+    line-height: 1.5;
+    color: #335576;
+}
+
+.hero__paragraph {
+    font-size: 1.4rem;
+    color: #335576;
+}
+
+.hero__image-container {
+    min-width: 35rem;
+    max-width: 50rem;
+    justify-self: end;
+}
+
+.hero__image {
+    width: 100%;
+}
+
+.hero__button:link,
+.hero__button:visited {
+    width: fit-content;
+    font-size: 1.4rem;
+    background-color: #db7a4e;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    border-radius: 40px;
+}
+
+/* Recommendations section styling */
+.recommendations {
+    padding: 6rem;
+}
+
+.recommendations__header {
+    font-size: 2.5rem;
+    color: #335576;
+    margin-bottom: 1.5rem;
+}
+
+.recommendations__destinations-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 3rem;
+}
+
+.recommendations__destinations:link,
+.recommendations__destinations:visited {
+    text-decoration: none;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-width: 30rem;
+    height: 45rem;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.recommendations__destinations:nth-child(1) {
+    background-image: url(../assets/images/hawaii.jpg);
+}
+
+.recommendations__destinations:nth-child(2) {
+    background-image: url(../assets/images/iceland.jpg);
+}
+
+.recommendations__destinations:nth-child(3) {
+    background-image: url(../assets/images/greece.jpg);
+}

@@ -2,78 +2,100 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
     <title>Travel Site - Home</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h2>Travel Site</h2>
-            <ul>
-                <li><a>Hawaii</a></li>
-                <li><a>Iceland</a></li>
-                <li><a>Greece</a></li>
+    <!-- Building the header navigation bar with an unordered list -->
+    <header class="header">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a class="nav__list-header" href="./index.html">Travel Site</a></li>
+                <li><a class="nav__list-destination nav__list-destination--visited" href="./index.html">Home</a></li>
+                <li><a class="nav__list-destination" href="./pages/hawaii.html">Hawaii</a></li>
+                <li><a class="nav__list-destination" href="./pages/iceland.html">Iceland</a></li>
+                <li><a class="nav__list-destination" href="./pages/greece.html">Greece</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <div>
-                <h1>Travelling Comes With Endless Discoveries</h1>
-                <p>Don't let your dreams be just dreams. Experience the world by booking a vacation with us now.</p>
-                <button type="button"> Get Started </button>
-            </div>
-            <div>
-                <img src="./assets/images/hero.png" alt="Travel Site hero">
+        <!-- Building the main section and having a container for each component of the section  -->
+        <!-- Hero section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__textcontent-container">
+                    <h1 class="hero__header-primary">Travelling Comes With Endless Discoveries </h1>
+                    <p class="hero__paragraph"> Don’t let your dreams be just dreams. Experience the world by booking a
+                        vacation with us now.</p>
+                    <a class="hero__button" href="./pages/hawaii.html">Get Started</a>
+                </div>
+                <div class="hero__image-container">
+                    <img src="./assets/images/hero.png" class="hero__image" />
+                </div>
             </div>
         </section>
-        <section>
-            <div>
-                <h2>Recommendations</h2>
-                <div>
-                    <a href="./assets/images/hawaii.jpg"><img src="./assets/images/hawaii.jpg"></a>
-                    <a href="./assets/images/iceland.jpg"><img src="./assets/images/iceland.jpg"></a>
-                    <a href="./assets/images/greece.jpg"><img src="./assets/images/greece.jpg"></a>
+        <!-- Recommendations section -->
+        <section class="recommendations">
+            <div class="container">
+                <h2 class="recommendations__header">Recommendations</h2>
+                <div class="recommendations__destinations-container">
+                    <a class="recommendations__destinations" href="./pages/hawaii.html"
+                        title="destination image">Hawaii</a>
+                    <a class="recommendations__destinations" href="./pages/iceland.html"
+                        title="destination image">Iceland</a>
+                    <a class="recommendations__destinations" href="./pages/greece.html"
+                        title="destination image">Greece</a>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <section>
-            <div>
-                <h3>Contact</h3>
-                <div>
-                    <p>Email</p>
-                    <p>info@travelsite.com</p>
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__section">
+                <h3 class="footer__section-title">Contact</h3>
+                <div class="footer__section-container">
+                    <div>
+                        <p class="footer__section-tag">Email</p>
+                        <p class="footer__section-information">info@travelsite.com</p>
+                    </div>
                 </div>
             </div>
-            <div>
-                <h3>Hours</h3>
-                <div>
-                    <p>Monday - Friday</p>
-                    <p>9:00 AM - 5:00 PM</p>
-                </div>
-                <div>
-                    <p>Saturday</p>
-                    <p>10:00 AM - 4:00 PM</p>
-                </div>
-                <div>
-                    <p>Sunday</p>
-                    <p>Closed</p>
+            <div class="footer__section">
+                <h3 class="footer__section-title">Hours</h3>
+                <div class="footer__section-container">
+                    <div>
+                        <p class="footer__section-tag">Monday - Friday</p>
+                        <p class="footer__section-information">9:00 AM - 5:00 PM</time>
+                    </div>
+                    <div>
+                        <p class="footer__section-tag">Saturday</p>
+                        <p class="footer__section-information">10:00 AM - 4:00 PM</time>
+                    </div>
+                    <div>
+                        <p class="footer__section-tag">Sunday</p>
+                        <p class="footer__section-information">Closed</p>
+                    </div>
                 </div>
             </div>
-            <div>
-                <h3>Social</h3>
-                <a href="https://www.instagram.com/"><img src="./assets/icons/icon-instagram.png" alt="instagram"></a>
-                <a href="https://www.facebook.com/"><img src="./assets/icons/icon-facebook.png" alt="facebook"></a>
-                <a href="https://www.twitter.com/"><img src="./assets/icons/icon-twitter.png" alt="twitter"></a>
+            <div class="footer__section">
+                <h3 class="footer__section-title">Social</h3>
+                <div class="footer__section-container">
+                    <a href="https://www.instagram.com"><img class="footer__section-icon"
+                            src="./assets/icons/icon-instagram.png" alt="instagram icon" /></a>
+                    <a href="https://www.facebook.com"><img class="footer__section-icon"
+                            src="./assets/icons/icon-facebook.png" alt="facebook icon" /></a>
+                    <a href="https://www.twitter.com"><img class="footer__section-icon"
+                            src="./assets/icons/icon-twitter.png" alt="twitter icon" /></a>
+                </div>
             </div>
-        </section>
+        </div>
     </footer>
 </body>

@@ -1,0 +1,64 @@
+/* Importing destination images */
+.destination--hawaii {
+    background-image: url(../assets/images/hawaii.jpg);
+}
+
+.destination--iceland {
+    background-image: url(../assets/images/iceland.jpg);
+}
+
+.destination--greece {
+    background-image: url(../assets/images/greece.jpg);
+}
+
+.destination {
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 5rem 5rem;
+}
+
+.destination__header-title {
+    color: #fff;
+    font-size: 8rem;
+    margin-bottom: 5rem;
+}
+
+.destination__schedule {
+    display: flex;
+    gap: 4rem;
+    padding: 0 10rem;
+}
+
+.destination__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    min-width: 25rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.destination__heading-day {
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.destination__activities-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    margin-bottom: 6rem;
+}
+
+.destination__activities {
+    background-color: #fefaf5;
+    border-radius: 0px;
+    padding: 1rem 4rem;
+    text-align: center;
+    font-size: 1.8rem;
+}

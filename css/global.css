@@ -1,0 +1,122 @@
+/* General styling for all */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-family: "Verdana";
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/* Header and navigation bar styling */
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.nav {
+  max-width: 63%;
+  padding: 2rem 3rem;
+  margin: auto;
+}
+
+.nav__list {
+  font-weight: 400;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+.nav__list li:first-child {
+  margin-right: auto;
+}
+
+.nav__list-header {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #335576;
+  text-decoration: none;
+}
+
+.nav__list-destination:link,
+.nav__list-destination:visited {
+  text-decoration: none;
+  color: #335576;
+  padding: 0.5rem 0;
+  transition: border-bottom 0.33s;
+}
+
+.nav__list-destination:hover,
+.nav__list-destination:active,
+.nav__list-destination--visited {
+  border-bottom: 2px solid #db7a4e;
+}
+
+
+/* Footer styling for all pages */
+.footer {
+  background-color: #fefaf5;
+  padding: 4rem;
+  margin-top: auto;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.footer__section-container {
+  display: flex;
+  gap: 5rem;
+}
+
+.footer__section-title {
+  font-size: 2.5rem;
+  color: #335576;
+  font-weight: bold;
+}
+
+.footer__section-tag {
+  text-transform: uppercase;
+  color: #db7a4e;
+  margin-bottom: 1rem;
+}
+
+.footer__section-information {
+  color: #335576;
+  font-size: 1.5rem;
+  font-style: normal;
+}
+
+.footer__section-icon {
+  margin-top: 20px;
+  max-width: 2.4rem;
+  max-height: 2.4rem;
+}
